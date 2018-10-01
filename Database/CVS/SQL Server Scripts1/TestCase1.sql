@@ -1,0 +1,297 @@
+--=================MEMBER_KEYS==========
+SELECT *
+FROM EnterpriseHub.mref.ExternalType ET
+;
+
+--=================MEMBER_KEYS==========
+SELECT *
+FROM EnterpriseHub.mref.ExternalType ET
+;
+
+SELECT TOP 100 M.MemberRecId, M.FirstName, M.JobLoadDate, xm.ExternalValue, ET.Code, ET.[Desc]
+FROM EnterpriseHub.dbo.MemberCompany M
+	INNER JOIN EnterpriseHub.Xref.Member XM
+	ON M.MemberRecId = XM.MemberRecId AND M.CompanyMRefId = XM.CompanyMRefId
+	INNER JOIN EnterpriseHub.mref.ExternalType ET
+	ON XM.ExternalTypeMRefId = ET.ExternalTypeMRefId AND ET.Code = 'MP' 	
+WHERE M.MemberRecId IN(112334,
+144377,            
+193364,            
+27911,            
+566149,            
+573689,            
+641201)
+;
+--=================MEMBER_KEYS==========
+
+
+SELECT DISTINCT M.MemberRecId, M.
+FROM EnterpriseHub.dbo.MemberCompany M
+	INNER JOIN EnterpriseHub.Xref.Member XM
+	ON M.MemberRecId = XM.MemberRecId AND M.CompanyMRefId = XM.CompanyMRefId
+	INNER JOIN EnterpriseHub.mref.ExternalType ET
+	ON XM.ExternalTypeMRefId = ET.ExternalTypeMRefId AND ET.Code = 'MP'
+WHERE M.MemberRecId IN(
+ )           
+SELECT DISTINCT M.MemberRecId
+FROM EnterpriseHub.dbo.MemberCompany M
+	INNER JOIN EnterpriseHub.Xref.Member XM
+	ON M.MemberRecId = XM.MemberRecId AND M.CompanyMRefId = XM.CompanyMRefId
+	INNER JOIN EnterpriseHub.mref.ExternalType ET
+	ON XM.ExternalTypeMRefId = ET.ExternalTypeMRefId
+WHERE XM.ExternalValue IN(
+							'N00067927492',
+							'N00080521225',
+							'N00153304327',
+							'N00099421440',
+							'N00101576895',
+							'N00250217867',
+							'N00253752537',
+							'N00256192961',
+							'N00018124409',
+							'N00026432349',
+							'N00090832089',
+							'N00156265286',
+							'N00189230528',
+							'N00204236535',
+							'N00228806003',
+							'N00234698631',
+							'N00251168249',
+							'N00271094893',
+							'N00270648439',
+							'N00250217895',
+							'N00067336741',
+							'N00018124495',
+							'N00296699300',
+							'N00299003002',
+							'N00308935867',
+							'N00345079402',
+							'N00345079351',
+							'N00089963404',
+							'N00106237237',
+							'N00193938301',
+							'N00193915056',
+							'N00165704809',
+							'N00199691577',
+							'N00253196784',
+							'N00239640078',
+							'N00225416887',
+							'N00240833080',
+							'N00240928747',
+							'N00255066648',
+							'N00269407458',
+							'N00302031315',
+							'N00001712992',
+							'N00003302296',
+							'N00140088184',
+							'N00035847545',
+							'N00095665441',
+							'N00142443962',
+							'N00191281030',
+							'N00193137764',
+							'N00201609982',
+							'N00204709060',
+							'N00205955166',
+							'N00210609192',
+							'N00209536124',
+							'N00216375876',
+							'N00225808356',
+							'N00231390446',
+							'N00232533691',
+							'N00246238080',
+							'N00263365918',
+							'N00265426467',
+							'N00264447684',
+							'N00264501304',
+							'N00302480019',
+							'N00304782514',
+							'N00322796387',
+							'N00011151761',
+							'N00011151866',
+							'N00016286905',
+							'N00021880943',
+							'N00023060396',
+							'N00061228526',
+							'N00138977026',
+							'N00190569938',
+							'N00193796620',
+							'N00221274638',
+							'N00270821209',
+							'N00278003316',
+							'N00308956308',
+							'N00018364276',
+							'N00023090156',
+							'N00043481530',
+							'N00052338484',
+							'N00092837580',
+							'N00158264324',
+							'N00154471893',
+							'N00191631934',
+							'N00158241777',
+							'N00161184376',
+							'N00250373575',
+							'N00282974312',
+							'N00285882691',
+							'N00288265665',
+							'N00001372789',
+							'N00004162488',
+							'N00090898625',
+							'N00009914688',
+							'N00046569430',
+							'N00058201486',
+							'N00090630303',
+							'N00104881279',
+							'N00139016551',
+							'N00241503615',
+							'N00251381139',
+							'N00004841407',
+							'N00005155141',
+							'N00024126199',
+							'N00096458840',
+							'N00191936635',
+							'N00202928882',
+							'N00223684823',
+							'N00261923480',
+							'N00289259005'
+)
+
+
+
+
+SELECT TOP 100 *
+FROM EnterpriseInterfaces.CVS.CVSSqeletonLayout
+
+
+
+SELECT DISTINCT CS.AvetaID
+, CS.MemberID
+--, CS.[Group]
+--, CS.ST_Group
+--, CS.FirstName
+--, CS.LastName
+--, CS.IndValue
+, COUNT(DISTINCT C.ClaimRefID )
+FROM EnterpriseInterfaces.CVS.CVSSqeletonLayout CS
+	INNER JOIN ENTERPRISEINTERFACES.CVS.PREGNANCYCOVEREDPLAN AS PREG
+	ON CS.INDVALUE = PREG.BENEFITPACKAGEID
+    INNER JOIN ENTERPRISEHUB.DBO.CLAIM AS C
+    ON CS.MEMBERID = C.SubscriberMemberMRefID
+WHERE 1 = 1
+--	AND avetaid = '010606169'
+	AND INDVALUE IN('P00310749643','P00310749499')
+	AND SexCode = 'F'
+--GROUP BY CS.AvetaID, CS.MemberID
+	AND CS.MemberID IN(11952,
+27911,
+65430,
+112334,
+142486,
+149378,
+178832,
+182025,
+193364,
+342206,
+363455,
+367917,
+403936,
+417072,
+421031,
+427498,
+428735,
+446006,
+457062,
+459286,
+463339,
+467239,
+478244,
+480918,
+481438,
+481957,
+483726,
+485917,
+489311,
+496780,
+500857,
+501218,
+502745,
+504143,
+505764,
+513979,
+518648,
+523402,
+528091,
+529527,
+540281,
+553704,
+557328,
+560571,
+564883,
+566763,
+567306,
+568912,
+573689,
+580759,
+581021,
+584971,
+586424,
+634668,
+638236,
+641201,
+642862,
+680609,
+680610,
+14397,
+42730,
+51374,
+103273,
+106274,
+144377,
+150787,
+164723,
+195651,
+274475,
+373621,
+381074,
+401800,
+404758,
+414977,
+428029,
+434447,
+440765,
+444359,
+445108,
+455095,
+456760,
+459915,
+463617,
+487851,
+488194,
+513189,
+517608,
+526506,
+543328,
+545443,
+546294,
+555394,
+556613,
+558330,
+565691,
+566149,
+567572,
+571295,
+576127,
+578350,
+579760,
+581089,
+583908,
+585996,
+588577,
+594410,
+600676,
+628303,
+628646,
+640944,
+644541,
+645323,
+666290)
+GROUP BY CS.AvetaID, CS.MemberID

@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+<SqlWorkbenchSqlProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="SQL Server Scripts1">
+  <Items>
+    <LogicalFolder Name="Connections" Type="2" Sorted="true">
+      <Items>
+        <ConnectionNode Name="1pacific1-jc.dev.pr.mmmhc.com:MMMHC\igonzalezp">
+          <Created>2016-12-14T09:33:42.9090609-04:00</Created>
+          <Type>SQL</Type>
+          <Server>1pacific1-jc.dev.pr.mmmhc.com</Server>
+          <UserName />
+          <Authentication>Windows Authentication</Authentication>
+          <InitialDB />
+          <LoginTimeout>15</LoginTimeout>
+          <ExecutionTimeout>0</ExecutionTimeout>
+          <ConnectionProtocol>NotSpecified</ConnectionProtocol>
+          <ApplicationName>Microsoft SQL Server Management Studio - Query</ApplicationName>
+        </ConnectionNode>
+        <ConnectionNode Name="1pacific2.dev.pr.mmmhc.com\pb_3pacific6:MMMHC\igonzalezp">
+          <Created>2016-11-29T18:59:40.1347805-04:00</Created>
+          <Type>SQL</Type>
+          <Server>1pacific2.dev.pr.mmmhc.com\pb_3pacific6</Server>
+          <UserName />
+          <Authentication>Windows Authentication</Authentication>
+          <InitialDB>master</InitialDB>
+          <LoginTimeout>15</LoginTimeout>
+          <ExecutionTimeout>0</ExecutionTimeout>
+          <ConnectionProtocol>NotSpecified</ConnectionProtocol>
+          <ApplicationName>Microsoft SQL Server Management Studio - Query</ApplicationName>
+        </ConnectionNode>
+      </Items>
+    </LogicalFolder>
+    <LogicalFolder Name="Queries" Type="0" Sorted="true">
+      <Items>
+        <FileNode Name="FIXELIG.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:1pacific1-jc.dev.pr.mmmhc.com:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>1pacific1-jc.dev.pr.mmmhc.com</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>FIXELIG.sql</FullPath>
+        </FileNode>
+        <FileNode Name="SQL CVS-Stored 6 Update Pregnancy.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:1pacific2.dev.pr.mmmhc.com\pb_3pacific6:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>1pacific2.dev.pr.mmmhc.com\pb_3pacific6</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>SQL CVS-Stored 6 Update Pregnancy.sql</FullPath>
+        </FileNode>
+        <FileNode Name="SQLQuery1.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:1pacific2.dev.pr.mmmhc.com\pb_3pacific6:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>1pacific2.dev.pr.mmmhc.com\pb_3pacific6</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>SQLQuery1.sql</FullPath>
+        </FileNode>
+        <FileNode Name="SQLQuery4.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:1pacific1-jc.dev.pr.mmmhc.com:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>1pacific1-jc.dev.pr.mmmhc.com</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>SQLQuery4.sql</FullPath>
+        </FileNode>
+        <FileNode Name="SQLQuery6.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:1pacific2.dev.pr.mmmhc.com\pb_3pacific6:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>1pacific2.dev.pr.mmmhc.com\pb_3pacific6</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>SQLQuery6.sql</FullPath>
+        </FileNode>
+        <FileNode Name="TestCase.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:1pacific1-jc.dev.pr.mmmhc.com:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>1pacific1-jc.dev.pr.mmmhc.com</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>TestCase.sql</FullPath>
+        </FileNode>
+        <FileNode Name="TestCase1.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:1pacific1-jc.dev.pr.mmmhc.com:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>1pacific1-jc.dev.pr.mmmhc.com</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>TestCase1.sql</FullPath>
+        </FileNode>
+        <FileNode Name="UAT.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:1pacific1-jc.dev.pr.mmmhc.com:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>1pacific1-jc.dev.pr.mmmhc.com</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>UAT.sql</FullPath>
+        </FileNode>
+        <FileNode Name="UAT_1.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:1pacific1-jc.dev.pr.mmmhc.com:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>1pacific1-jc.dev.pr.mmmhc.com</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>UAT_1.sql</FullPath>
+        </FileNode>
+      </Items>
+    </LogicalFolder>
+    <LogicalFolder Name="Miscellaneous" Type="3" Sorted="true">
+      <Items />
+    </LogicalFolder>
+  </Items>
+</SqlWorkbenchSqlProject>
